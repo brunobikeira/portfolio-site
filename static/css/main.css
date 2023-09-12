@@ -1,3 +1,181 @@
-html (
+:root {
+    --primary-color: #E83C1F;
+    --secondary-color: #F4E8D2;
 
-)
+    --title-font: 'Bebas Neue', sans-serif;
+    --body-font: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+}
+
+.fs-1013{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.fs-1219 {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
+
+.fs-1422 {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.fs-1622 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.fs-1824 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.fs-2530 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.fs-2734 {
+    font-size: 2.7rem;
+    line-height: 3.4rem;
+}
+
+.fs-3036 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+}
+
+.fs-3542 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+}
+
+.fs-5540 {
+    font-size: 5.5rem;
+    line-height: 4rem;
+}
+
+@media (min-width: 992px) { 
+    .fs-lg-1419 {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+    .fs-lg-1624 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .fs-lg-1821 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+
+    .fs-lg-2030 {
+        font-size: 2rem;
+        line-height: 3rem; 
+    }
+
+    .fs-lg-2229 {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+    }
+
+    .fs-lg-2430 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    .fs-lg-2630 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    .fs-lg-3035 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    
+    .fs-lg-3540 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .fs-lg-3842 {
+        font-size: 3.8rem;
+        line-height: 4.2rem;
+    }
+
+    .fs-lg-4047 {
+        font-size: 4rem;
+        line-height: 4.7rem;
+    }
+
+    .fs-lg-4450 {
+        font-size: 4.4rem;
+        line-height: 5rem;
+        letter-spacing: .33rem;
+    }
+
+    .fs-lg-6994 {
+        font-size: 6.9rem;
+        line-height: 9.4rem;
+    }
+
+    .fs-lg-128154 {
+        font-size: 12.8rem;
+        line-height: 15.4rem;
+    }
+
+    .fs-lg-200200 {
+        font-size: 20rem;
+        line-height: 20rem;
+    }
+}
+
+.container-larger {
+    max-width: 1440px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
