@@ -191,6 +191,56 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color) !important;
 }
 
+.button-primary {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 1rem 3.6rem;
+    border-radius: .6rem;
+    border: 2px solid var(--primary-color);
+    transition: 500ms all ease;
+}
+
+.button-primary:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.button-primary-inverted {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 1rem 3.6rem;
+    border-radius: .6rem;
+    border: 2px solid var(--secondary-color);
+    transition: 500ms all ease;
+}
+
+.button-primary-inverted:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.button-footer {
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1.8rem 4rem;
+    border-radius: .6rem;
+    border: 1px solid var(--secondary-color);
+    transition: 500ms all ease;
+}
+
+.button-footer:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
 .container-larger {
     max-width: 1440px;
     --bs-gutter-x: 1.5rem;
@@ -320,7 +370,7 @@ nav a {
     border: 1px solid var(--primary-color);
     border-radius: var(--bs-border-radius-pill);
     padding: .5rem 1rem;
-    margin: 0 .5rem .5rem 0;
+    margin: 0 1rem 1rem 0;
 }
 
 .arm-container figure{
@@ -329,6 +379,7 @@ nav a {
 
 footer {
     margin-top: 14.7rem;
+    padding-bottom: 7rem;
 }
 
 footer::before {
