@@ -14,13 +14,13 @@
 <body>
     <header>
         <div class="container">
-            <nav class="d-flex justify-content-between align-items-center">
-                <p><img src="/static/imgs/star.svg"><span>BP's Portfolio</span></p>
-                <ul class="d-flex">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Resume</a></li>
-                    <li><a href="https://github.com/brunobikeira/">Github</a></li>
+            <nav class="d-flex justify-content-between align-items-center py-5">
+                <div class="d-flex align-items-center"><img src="/static/imgs/star.svg"><span class="d-block ms-4 fs-1622 fw-semibold">BP's Portfolio</span></div>
+                <ul class="menu d-none d-lg-flex fs-1622 fw-semibold">
+                    <li class="mx-4"><a href="#work">Work</a></li>
+                    <li class="mx-4"><a href="#about">About</a></li>
+                    <li class="mx-4"><a href="#work">Resume</a></li>
+                    <li class="mx-4"><a href="https://github.com/brunobikeira/">Github</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,48 +28,66 @@
     <main>
         <section class="hero">
             <div class="container">
-                <img src="/static/imgs/hello.svg">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h1 class="fs-2530 fs-lg-4450">My Name is</h1>
-                        <div class="text-center">
-                            <span class="fs-1422 fs-lg-2229 d-block">EST</span>
-                            <span class="fs-1622 fs-lg-2630 d-block">1986</span>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-12 col-lg-10">
+                        <figure class="text-center">
+                            <img src="/static/imgs/hello.svg">
+                        </figure>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <img class="me-4" src="/static/imgs/star.svg">
+                                    <h1 class="fs-2530 fs-lg-4450">My Name is</h1>
+                                </div>
+                                <div class="beer-label text-center rounded-pill">
+                                    <span class="fs-1422 fs-lg-2229 d-block fw-semibold">EST</span>
+                                    <span class="fs-1622 fs-lg-2630 d-block fw-bold">1986</span>
+                                </div>
+                            </div>
+                            <figure class="offset-hero">
+                                <img src="/static/imgs/me.svg">
+                            </figure>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h1 class="fs-2530 fs-lg-4450">Bruno Paes</h1>
+                                    <img class="ms-4" src="/static/imgs/star.svg">
+                                </div>
+                                <div class="beer-label text-center rounded-pill">
+                                    <span class="fs-1622 fs-lg-3540 d-block fw-bold">5%</span>
+                                    <span class="fs-1013 fs-lg-2430 d-block fw-bold">ABV</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <figure>
-                        <img src="/static/imgs/me.svg">
-                    </figure>
-                    <div>
-                    <h1 class="fs-2530 fs-lg-4450">Bruno Paes</h1>
-                        <div class="text-center">
-                            <span class="fs-1622 fs-lg-3540 d-block">5%</span>
-                            <span class="fs-1013 fs-lg-2430 d-block">ABV</span>
-                        </div>
-                    </div>
+                    <div class="col-lg-1"></div>
                 </div>
-                <p class="fs-1219 fs-lg-2030 fw-bold text-center">I'm a versatile UI/UX, Product and Digital Designer with a passion for home brewing and creating engaging digital experiences. </p>
+                <p class="hero-txt fs-1219 fs-lg-2030 fw-bold text-center">I'm a versatile UI/UX, Product and Digital Designer with a passion for home brewing and creating engaging digital experiences. </p>
+                <figure class="text-center">
+                    <img src="/static/imgs/arrow-down.svg">
+                </figure>
             </div>
         </section>
-        <section class="intro">
+        <section class="intro d-flex align-items-center position-relative bg-primary text-secondary">
             <div class="container">
-               <figure>
+               <figure class="text-center">
                     <img src="/static/imgs/brew-paddle.svg">
                </figure>
-               <h3 class="fs-2734 fs-lg-6994">With a strong background in web design, motion design, and front-end development, I bring a unique blend of skills to every project I undertake.</h3>
+               <h3 class="intro-txt fs-2734 fs-lg-6494 font-body">With a strong background in web design, motion design, and front-end development, I bring a unique blend of skills to every project I undertake.</h3>
                <div class="row">
                     <div class="col-12 col-lg-6"></div>
-                    <div class="col-12 col-lg-6">
-                        <h4 class="fs-1219 fs-lg-2030 text-uppercase">I WILL BE GLAD TO COOPERATE AND “BREW” SOMETHING SPECIAL FOR YOUR BUSINESS</h4>
-                        <a class="fs-1219 fs-lg-2030 text-uppercase" href="mailto:brunoliveirapaes@gmail.com">Let's work together</a>
+                    <div class="col-12 col-lg-5">
+                        <h4 class="fs-1219 fs-lg-2030 text-uppercase font-body fw-semibold">I WILL BE GLAD TO COOPERATE AND “BREW” SOMETHING SPECIAL FOR YOUR BUSINESS</h4>
+                        <a class="intro-cta d-block fs-1219 fs-lg-2030 text-uppercase fw-bold text-secondary" href="mailto:brunoliveirapaes@gmail.com">Let's work together</a>
                     </div>
+                    <div class="col-12 col-lg-1"></div>
                </div>
             </div>
         </section>
         <section class="work">
             <div class="container">
-                <h2 class="fs-5540 fs-lg-128154">Work</h2>
-                <a class="" target="_self">
+                <h2 class="work-title fs-5540 fs-lg-128154">Work</h2>
+                <a href="#" class="list-item d-block text-primary text-decoration-none" target="_self">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="fs-3542">We are Authentics</h3>
@@ -94,57 +112,100 @@
         </section>
         <section class="about">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                        <h2 class="fs-5540 fs-lg-128154">About me</h2>
+                        <h2 class="about-title fs-5540 fs-lg-128154">About me</h2>
                         <p class="fs-1422 fs-lg-1624">I thrive on transforming ideas into captivating visuals and intuitive user interfaces. Throughout my career, I've collaborated with clients and agencies, refining my skills and delivering innovative solutions.</p>
                         <p class="fs-1422 fs-lg-1624">I bring a deep understanding of design principles and a user-centric approach to every project. I combine aesthetics with functionality to create seamless user experiences.</p>
-                        <h3 class="fs-2530 fs-lg-3842">Let's collaborate and bring your digital vision to life.</h3>
-                        <a href="mailto:brunoliveirapaes@gmail.com">Contact me</a>
+                        <h3 class="about-cta fs-2530 fs-lg-3842">Let's collaborate and bring your digital vision to life.</h3>
+                        <a class="about-button" href="mailto:brunoliveirapaes@gmail.com">Contact me</a>
                     </div>
                     <div class="col-12 col-lg-8">
-                        <figure>
-                            <img scr="/static/imgs/me-polaroid.jpg">
+                        <figure class="about-img">
+                            <img class="w-100" src="/static/imgs/me-polaroid.png">
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="my-assets">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-5"></div>
                     <div class="col-12 col-lg-7">
-                        <div>
-                            <h2 class="fs-3036">Skills</h2>
-                            <div class="d-flex">
-                                <span class="pill fs-1422"></span>
+                        <div class="list-item">
+                            <h2 class="my-assets-title fs-3036">Skills</h2>
+                            <div class="d-flex flex-wrap">
+                                <span class="pill">UI/UX Design</span>
+                                <span class="pill">Wireframing & Prototyping</span>
+                                <span class="pill">Visual Design</span>
+                                <span class="pill">Typography</span>
+                                <span class="pill">Responsive Design</span>
+                                <span class="pill">Web Design</span>
+                                <span class="pill">Motion Design</span>
+                                <span class="pill">Front-End Development</span>
+                                <span class="pill">Problem Solving</span>
+                                <span class="pill">Attention to Detail</span>
+                                <span class="pill">Collaboration</span>
                             </div>
                         </div>
-                        <div>
-                            <h2 class="fs-3036">Tools</h2>
-                            <div class="d-flex">
-                                <span class="pill fs-1422"></span>
+                        <div class="list-item">
+                            <h2 class="my-assets-title fs-3036">Tools</h2>
+                            <div class="d-flex flex-wrap">
+                                <span class="pill">Photoshop</span>
+                                <span class="pill">Illustrator</span>
+                                <span class="pill">After Effects</span>
+                                <span class="pill">Sketch</span>
+                                <span class="pill">Figma</span>
+                                <span class="pill">InVision</span>
+                                <span class="pill">Bootstrap</span>
+                                <span class="pill">Wordpress</span>
+                                <span class="pill">Shopify</span>
+                                <span class="pill">Github</span>
+                                <span class="pill">HTML</span>
+                                <span class="pill">CSS</span>
+                                <span class="pill">Javascript</span>
                             </div>
                         </div>
-                        <div>
-                            <h2 class="fs-3036">Personal Interests</h2>
-                            <div class="d-flex">
-                                <span class="pill fs-1422"></span>
+                        <div class="list-item">
+                            <h2 class="my-assets-title fs-3036">Personal Interests</h2>
+                            <div class="d-flex flex-wrap">
+                                <span class="pill">Design Trends</span>
+                                <span class="pill">New Tech</span>
+                                <span class="pill">Photography</span>
+                                <span class="pill">Digital Art</span>
+                                <span class="pill">Seeking Inspiration</span>
+                                <span class="pill">Innovation</span>
                             </div>
                         </div>
-                        <div>
-                            <h2 class="fs-3036">Obsessions</h2>
-                            <div class="d-flex">
-                                <span class="pill fs-1422"></span>
+                        <div class="list-item">
+                            <h2 class="my-assets-title fs-3036">Obsessions</h2>
+                            <div class="d-flex flex-wrap">
+                                <span class="pill">Homebrewing</span>
+                                <span class="pill">Fermentations</span>
+                                <span class="pill">Hot Sauces</span>
+                                <span class="pill">Cooking</span>
+                                <span class="pill">Figma</span>
+                                <span class="pill">Sustainability</span>
+                                <span class="pill">Reading</span>
+                                <span class="pill">Gaming</span>
+                                <span class="pill">Cinema</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="arm-container position-relative">
+                <figure class="position-absolute">
+                    <img class="w-100" src="/static/imgs/round-text.svg">
+                </figure>
+                <figure class="position-absolute">
+                    <img class="w-100" src="/static/imgs/arm.svg">
+                </figure>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="position-relative bg-primary text-secondary">
         <div class="container text-center">
             <h1 class="fs-5540 fs-lg-200200">Let's Talk</h1>
             <a href="mailto:brunoliveirapaes@gmail.com">brunoliveirapaes@gmail.com</a>
