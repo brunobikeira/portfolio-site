@@ -113,6 +113,11 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 2.1rem;
     }
 
+    .fs-lg-1828 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
     .fs-lg-2030 {
         font-size: 2rem;
         line-height: 3rem; 
@@ -173,6 +178,10 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20rem;
         line-height: 20rem;
     }
+}
+
+strong {
+    font-weight: 700;
 }
 
 .bg-primary {
@@ -496,4 +505,11 @@ footer {
         margin: -1rem;
         padding-bottom: 7rem;
     }
+}
+
+figure img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
 }
