@@ -277,6 +277,14 @@ strong {
     }
 }
 
+.border-radius-6 {
+    border-radius: .6rem;
+}
+
+.border-radius-20 {
+    border-radius: 2rem;
+}
+
 /* header */
 
 header {
@@ -828,4 +836,22 @@ figure img {
         padding-right: calc((100vw - 1200px) / 2);
         max-width: 100%;
     }
+}
+
+
+/* || work - case studies */
+
+.banner img {
+    height: 30rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .banner img {
+        height: auto;
+    }
+}
+
+.mockup-pc img {
+    max-width: 77.5rem;
 }
