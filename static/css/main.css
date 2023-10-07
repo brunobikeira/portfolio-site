@@ -24,17 +24,63 @@ body {
 body::after {
     content: '';
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 300%;
+    height: 300%;
+    left: -100%;
+    top: -100%;
     background-image: url(../imgs/grain.png);
     background-repeat: repeat;
     pointer-events: none;
     z-index: 1;
     mix-blend-mode: soft-light;
+    -webkit-animation:grain-flicker 7s steps(10) infinite;
+        animation: grain-flicker 7s steps(10) infinite
+}
+
+@keyframes grain-flicker {
+    0% {
+        transform: translate(0,0)
+    }
+
+    10% {
+        transform: translate(-5%,-10%)
+    }
+
+    20% {
+        transform: translate(-15%,5%)
+    }
+
+    30% {
+        transform: translate(7%,-25%)
+    }
+
+    40% {
+        transform: translate(-5%,25%)
+    }
+
+    50% {
+        transform: translate(-15%,10%)
+    }
+
+    60% {
+        transform: translate(15%,0)
+    }
+
+    70% {
+        transform: translate(0,15%)
+    }
+
+    80% {
+        transform: translate(3%,20%)
+    }
+
+    90% {
+        transform: translate(-10%,10%)
+    }
+
+    to {
+        transform: translate(0,0)
+    }
 }
 
 body.menu-open {
@@ -766,6 +812,35 @@ nav a {
     z-index: 2;
     max-width: 115rem;
     margin-bottom: -24rem;
+}
+
+@keyframes arm-beer {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg); /* Adjust the rotation angle as needed */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+  
+.arm-container {
+    animation: arm-beer 5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.round-text-container img {
+    animation: rotate 20s linear infinite;
 }
 
 @media (min-width: 992px) {
